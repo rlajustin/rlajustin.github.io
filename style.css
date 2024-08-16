@@ -1,0 +1,60 @@
+/* Reset some default styling */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 0px;
+    font-size: 16px;
+    line-height: 1.4em;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 1 1 250px; /* Sidebar takes at least 250px, but can grow or shrink */
+    max-width: 250px;
+    border-right: 1px solid #ccc;
+    padding: 0px 20px;
+    height: 220px; /* just change this if gets longer */
+    overflow-y: auto;
+    text-align: right;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.main-content {
+    flex: 3 1 750px; /* Main content takes more space, but can grow or shrink */
+    margin-left: 15px; /* Space between sidebar and main content */
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* Optional: Add responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        flex: 1 1 200px; /* Sidebar takes up less space on smaller screens */
+    }
+
+    .main-content {
+        flex: 2 1 600px; /* Main content also adjusts */
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
+}
+
