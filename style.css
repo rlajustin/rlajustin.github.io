@@ -58,3 +58,10 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+.button {
+    display: inline;
+    background-color: #6c6c6c;
+    color: white;
+    padding: 2px 5px;
+    font-size: 75%;
+}
